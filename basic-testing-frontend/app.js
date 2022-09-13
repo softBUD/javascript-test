@@ -14,10 +14,10 @@ function formSubmitHandler(event) {
   const formData = new FormData(form);
   const numberInputs = extractNumbers(formData);
 
-  let result = '';
+  let result = ''; 
   
   try {
-    const numbers = [];
+    const numbers = []; 
     for (const numberInput of numberInputs) {
       validateStringNotEmpty(numberInput);
       const number = transformToNumber(numberInput);
